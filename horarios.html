@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Feel the beat</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+        table {
+            width: 80%; /* La tabla ocupa el 80% de la pantalla */
+            border-collapse: collapse;
+            margin: 20px auto; /* La tabla está centrda */
+            font-size: 16px;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Colores para los diferentes cursos de la academia */
+        .jazzJunior { background-color: #ffcccc; }    /* Rojo claro para Jazz Junior */
+        .jazzAdultos { background-color: #ff6666; }     /* Rojo oscuro para Jazz Adultos */
+        .contemporaneoJunior { background-color: #ccffcc; }    /* Verde claro para Contemporáneo Junior */
+        .contemporaneoAdultos { background-color: #66ff66; }     /* Verde oscuro para Contemporáneo Adultos */
+        .hiphopJunior { background-color: #ccccff; }   /* Azul claro para Hip-Hop Junior */
+        .hiphopAdultos { background-color: #6666ff; }    /* Azul oscuro para Hip-Hop Adultos */
+        .balletJunior { background-color: #ffffcc; }   /* Amarillo claro para Ballet Junior */
+        .balletAdultos { background-color: #ffff66; }    /* Amarillo oscuro para Ballet Adultos */
+        .bailesSalon { background-color: #ffccff; }      /* Rosa para Bailes de Salón */
+        .caribenos { background-color: #ff9966; }         /* Naranja para Caribeños */
+        .pilates { background-color: #cccccc; }           /* Gris para Pilates */
+        .competiciones { background-color: #7cb7f8; }     /* Azul para Competiciones */
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <img src="ftb1.png" alt="Logo de la Academia" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="clases.html">CLASES</a></li>
+                <li><a href="horarios.html">HORARIOS</a></li>
+                <li><a href="matricula.html">MATRÍCULA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="text-align: center;">Horarios de Clases</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="competiciones">Competición Jazz Junior</td>
+                <td></td>
+            </tr>
+           
+            <tr>
+                <td>11:30 - 13:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="competiciones">Competición Hip-Hop Adultos</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>13:00 - 14:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="competiciones">Competición Jazz Adultos</td>
+                <td></td>
+            </tr>
+
+            
+            <tr>
+                <td>17:00 - 18:30</td>
+                <td class="jazzJunior">Jazz/Danza Moderna Junior</td>
+                <td class="contemporaneoJunior">Contemporáneo Junior</td>
+                <td class="hiphopJunior">Hip-Hop Junior</td>
+                <td class="balletJunior">Ballet Junior</td>
+                <td class="caribenos">Caribeños</td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>18:30 - 20:00</td>
+                <td class="jazzAdultos">Jazz/Danza Moderna Adultos</td>
+                <td class="contemporaneoAdultos">Contemporáneo Adultos</td>
+                <td class="hiphopAdultos">Hip-Hop Adultos</td>
+                <td class="balletAdultos">Ballet Adultos</td>
+                <td class="bailesSalon">Bailes de Salón</td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>20:00 - 21:30</td>
+                <td class="pilates">Pilates</td>
+                <td class="jazzAdultos">Jazz/Danza Moderna Adultos</td>
+                <td class="bailesSalon">Bailes de Salón</td>
+                <td class="caribenos">Caribeños</td>
+                <td class="pilates">Pilates</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <footer>
+        <p>CONTACTO</p>
+		
+        <p>Teléfono: 668300113</p>
+        <p>Email: feelthebeat@gmail.com</p>
+        <p>Dirección: Pl. Arizgoiti, 1, 48970 Basauri, Vizcaya</p>
+        <p>Horario oficina: Lunes a Viernes de 17:00 a 20:30 // Sábados de 10:00 a 14:00</p>
+		
+		<p>&copy; 2024 Feel The Beat Dance Academy. Todos los derechos reservados.</p>
+
+		
+    </footer>
+  </body>
+</html>

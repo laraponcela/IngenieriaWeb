@@ -1,0 +1,174 @@
+<!--esta es la página matricula-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Feel the beat</title>
+    <link rel="stylesheet" href="styles.css">
+	
+	<style>
+        		
+		.formularioMatricula {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color:  #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .formularioMatricula h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .formularioMatricula label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .formularioMatricula input[type="text"],
+        .formularioMatricula input[type="email"],
+        .formularioMatricula input[type="date"],
+        .formularioMatricula input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .formularioMatricula .cursos {
+            margin-bottom: 20px;
+        }
+
+        .formularioMatricula input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .formularioMatricula input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .formularioMatricula button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: pink;
+            color: black;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+      
+		.notaPago {
+            position: fixed; /* Queda fijado en una esquina de la pantalla*/
+            top: 400px;
+            right: 30px; 
+            background-color: #fdfd96;
+            padding: 10px;
+            border: 1px solid #6a6e73; 
+            font-size: 0.9em; 
+            max-width: 200px; 
+        }
+		
+		
+    </style>
+  </head>
+
+  <body>
+  	<header>
+		<img src="ftb1.png" alt="Logo de la Academia" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+                <li><a href="clases.html">CLASES</a></li>
+                <li><a href="horarios.html">HORARIOS</a></li>
+                <li><a href="matricula.html">MATRÍCULA</a></li>
+			</ul>	
+		</nav> 
+	</header>
+	
+	<main>
+		<section class="formularioMatricula">
+			<h2>Formulario de Matrícula</h2>
+
+			<form>
+			
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+
+			
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" id="apellidos" name="apellidos" required>
+
+			
+				<label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+				<input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+			
+				<label for="correo">Correo Electrónico:</label>
+				<input type="email" id="correo" name="correo" required>
+
+			
+				<label for="telefono">Teléfono:</label>
+				<input type="tel" id="telefono" name="telefono" required>
+
+			
+				<fieldset class="cursos">
+					<legend>Selecciona el curso al que deseas apuntarte:</legend>
+					<label><input type="radio" name="curso" value="Jazz/Danza Moderna" required> Jazz/Danza Moderna junior</label><br>
+					<label><input type="radio" name="curso" value="Jazz/Danza Moderna" required> Jazz/Danza Moderna adulto</label><br>
+					<label><input type="radio" name="curso" value="Contemporáneo" required> Contemporáneo junior</label><br>
+					<label><input type="radio" name="curso" value="Contemporáneo" required> Contemporáneo adulto</label><br>
+					<label><input type="radio" name="curso" value="Hip-Hop" required> Hip-Hop junior</label><br>
+					<label><input type="radio" name="curso" value="Hip-Hop" required> Hip-Hop adulto</label><br>
+					<label><input type="radio" name="curso" value="Ballet"> Ballet junior</label><br>
+					<label><input type="radio" name="curso" value="Ballet"> Ballet adulto</label><br>
+					<label><input type="radio" name="curso" value="Bailes de Salón"> Bailes de Salón</label><br>
+					<label><input type="radio" name="curso" value="Caribeños"> Caribeños</label><br>
+					<label><input type="radio" name="curso" value="Pilates"> Pilates</label>
+				</fieldset>
+				
+				<label for="nivelExperiencia">Nivel de experiencia:</label>
+				<select id="nivelExperiencia" name="nivelExperiencia" required>
+					<option value="">Seleccione su nivel</option>
+					<option value="principiante">Principiante</option>
+					<option value="intermedio">Intermedio</option>
+					<option value="avanzado">Avanzado</option>
+				</select>
+				<br><br>
+	
+				
+				<label><input type="checkbox" name="suscripcion" id="suscripcion"> Deseo recibir noticias sobre eventos y talleres de la academia</label><br>
+				<label><input type="checkbox" name="terminos" required> Acepto los términos y condiciones</label><br>
+
+		
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+		
+		<div class="notaPago">
+			<p><strong>Nota:</strong> El pago del curso debe realizarse la primera semana de cada mes, mediante bizum al teléfono de la academia así como en la propia recepción <em>(consultar horarios).</em></p>
+		</div>
+	</main>
+	
+		
+	<footer>
+		<p>CONTACTO</p>
+		
+		<p>Teléfono: 668300113</p>
+		<p>Email: feelthebeat@gmail.com</p>
+		<p>Dirección: Pl. Arizgoiti, 1, 48970 Basauri, Vizcaya</p>																														
+		<p>Horario oficina: Lunes a Viernes de 17:00 a 20:30 // Sábados de 10:00 a 14:00 </p>
+			
+		
+		<p>&copy; 2024 Feel The Beat Dance Academy. Todos los derechos reservados.</p>
+
+		
+	</footer>
+  </body>
+</html>
